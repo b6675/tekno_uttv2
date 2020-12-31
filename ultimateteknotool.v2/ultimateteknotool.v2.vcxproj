@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{95BE6499-8951-48EA-BF37-4EA0EF2FA58B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ultimateteknotoolv2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>H:\A\c++\programms\tmustdie\ultimateteknotool.v2\ultimateteknotool.v2\debug_console;H:\A\c++\programms\tmustdie\ultimateteknotool.v2\libtom\libtomcrypt\include;$(IncludePath)</IncludePath>
+    <LibraryPath>H:\A\c++\programms\tmustdie\ultimateteknotool.v2\libtom\libtommath\lib;H:\A\c++\programms\tmustdie\ultimateteknotool.v2\libtom\libtomcrypt\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>H:\A\c++\programms\tmustdie\ultimateteknotool.v2\libtom\libtomcrypt\include;$(IncludePath)</IncludePath>
+    <LibraryPath>H:\A\c++\programms\tmustdie\ultimateteknotool.v2\libtom\libtommath\lib;H:\A\c++\programms\tmustdie\ultimateteknotool.v2\libtom\libtomcrypt\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;ULTIMATETEKNOTOOLV2_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;ULTIMATETEKNOTOOLV2_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;ULTIMATETEKNOTOOLV2_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>H:\A\c++\programms\tmustdie\ultimateteknotool.v2\ultimateteknotool.v2\debug_console;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;ULTIMATETEKNOTOOLV2_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="cfg_functions.h" />
+    <ClInclude Include="compiletime_XORstring.h" />
+    <ClInclude Include="constexprcolorcodes.h" />
+    <ClInclude Include="CWinAPIFileW.h" />
+    <ClInclude Include="CWindowCfgReader.h" />
+    <ClInclude Include="CWindowCfgWriter.h" />
+    <ClInclude Include="CWindowsBuilder.h" />
+    <ClInclude Include="CWindowsFontApplier.h" />
+    <ClInclude Include="CWindowTextLimiter.h" />
+    <ClInclude Include="CWindowTextReader.h" />
+    <ClInclude Include="CWindow_button.h" />
+    <ClInclude Include="CWindow_button_cfg.h" />
+    <ClInclude Include="CWindow_edit.h" />
+    <ClInclude Include="CWindow_edit_cfg.h" />
+    <ClInclude Include="CWindow_hwnd.h" />
+    <ClInclude Include="CWindow_static.h" />
+    <ClInclude Include="debug_console\debugconsole.h" />
+    <ClInclude Include="debug_console\pch.h" />
+    <ClInclude Include="debug_hooks.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="HFont_Wrapper.h" />
+    <ClInclude Include="Hooker_JMP.h" />
+    <ClInclude Include="HooksAfterResumingThreads.h" />
+    <ClInclude Include="HooksOnThreadsStart.h" />
+    <ClInclude Include="Injector.h" />
+    <ClInclude Include="iw5mp_addresses_declaration.h" />
+    <ClInclude Include="iw5mp_addresses_definition.h" />
+    <ClInclude Include="iw5mp_address_verifier.h" />
+    <ClInclude Include="iw5mp_constants.h" />
+    <ClInclude Include="iw5mp_functions_declaration.h" />
+    <ClInclude Include="iw5mp_functions_definition.h" />
+    <ClInclude Include="iw5mp_nickname_etc_functions.h" />
+    <ClInclude Include="iw5mp_players_functions.h" />
+    <ClInclude Include="iw5mp_quickbuttons_functions.h" />
+    <ClInclude Include="iw5mp_structs.h" />
+    <ClInclude Include="iw5mp_xuidhwid_functions.h" />
+    <ClInclude Include="JMPHook_bdDTLSAssociation_functions.h" />
+    <ClInclude Include="JMPHook_bdUPnP_functions.h" />
+    <ClInclude Include="JMPHook_iphlpapi_functions.h" />
+    <ClInclude Include="JMPHook_SerializeNetdata.h" />
+    <ClInclude Include="JMPHook_sysinfoapi_functions.h" />
+    <ClInclude Include="JMP_iw5mp_functions.h" />
+    <ClInclude Include="LazyBuffer.h" />
+    <ClInclude Include="LazyBuffer_512wchart.h" />
+    <ClInclude Include="ParserRandMask.h" />
+    <ClInclude Include="PatternSearcher.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="ProcessController.h" />
+    <ClInclude Include="Randomizer.h" />
+    <ClInclude Include="Serializers.h" />
+    <ClInclude Include="TextConvertors.h" />
+    <ClInclude Include="TheWinMain.h" />
+    <ClInclude Include="TomLibKeyGen.h" />
+    <ClInclude Include="WindowsVisitor.h" />
+    <ClInclude Include="windows_accountpage.h" />
+    <ClInclude Include="windows_cfgbuttons.h" />
+    <ClInclude Include="windows_injectorpage.h" />
+    <ClInclude Include="windows_maincontrolbuttons.h" />
+    <ClInclude Include="windows_playerspage.h" />
+    <ClInclude Include="windows_quickbuttons.h" />
+    <ClInclude Include="WinMainProc.h" />
+    <ClInclude Include="CWindowTextWriter.h" />
+    <ClInclude Include="Winsock_Client.h" />
+    <ClInclude Include="Winsock_ClientController.h" />
+    <ClInclude Include="WSAController.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cfg_functions.cpp" />
+    <ClCompile Include="compiletime_XORstring.cpp" />
+    <ClCompile Include="CWinAPIFileW.cpp" />
+    <ClCompile Include="CWindowCfgReader.cpp" />
+    <ClCompile Include="CWindowCfgWriter.cpp" />
+    <ClCompile Include="CWindowFileW.cpp" />
+    <ClCompile Include="CWindowsFontApplier.cpp" />
+    <ClCompile Include="CWindowTextLimiter.cpp" />
+    <ClCompile Include="CWindowTextReader.cpp" />
+    <ClCompile Include="CWindowTextWriter.cpp" />
+    <ClCompile Include="CWindow_button.cpp" />
+    <ClCompile Include="CWindow_button_cfg.cpp" />
+    <ClCompile Include="CWindow_edit.cpp" />
+    <ClCompile Include="CWindow_edit_cfg.cpp" />
+    <ClCompile Include="CWindow_static.cpp" />
+    <ClCompile Include="debug_console\debugconsole.cpp" />
+    <ClCompile Include="debug_hooks.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="HFont_Wrapper.cpp" />
+    <ClCompile Include="Hooker_JMP.cpp" />
+    <ClCompile Include="HooksAfterResumingThreads.cpp" />
+    <ClCompile Include="HooksOnThreadsStart.cpp" />
+    <ClCompile Include="Injector.cpp" />
+    <ClCompile Include="iw5mp_addresses_declaration.cpp" />
+    <ClCompile Include="iw5mp_addresses_definition.cpp" />
+    <ClCompile Include="iw5mp_address_verifier.cpp" />
+    <ClCompile Include="iw5mp_functions_declaration.cpp" />
+    <ClCompile Include="iw5mp_functions_definition.cpp" />
+    <ClCompile Include="iw5mp_nickname_etc_functions.cpp" />
+    <ClCompile Include="iw5mp_players_functions.cpp" />
+    <ClCompile Include="iw5mp_quickbuttons_functions.cpp" />
+    <ClCompile Include="iw5mp_xuidhwid_functions.cpp" />
+    <ClCompile Include="JMPHook_bdDTLSAssociation_functions.cpp" />
+    <ClCompile Include="JMPHook_bdUPnP_functions.cpp" />
+    <ClCompile Include="JMPHook_iphlpapi_functions.cpp" />
+    <ClCompile Include="JMPHook_SerializeNetdata.cpp" />
+    <ClCompile Include="JMPHook_sysinfoapi_functions.cpp" />
+    <ClCompile Include="JMP_iw5mp_functions.cpp" />
+    <ClCompile Include="LazyBuffer.cpp" />
+    <ClCompile Include="LazyBuffer_512wchart.cpp" />
+    <ClCompile Include="MainWindowSizes.cpp" />
+    <ClCompile Include="ParserRandMask.cpp" />
+    <ClCompile Include="PatternSearcher.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Randomizer.cpp" />
+    <ClCompile Include="Serializers.cpp" />
+    <ClCompile Include="TextConvertors.cpp" />
+    <ClCompile Include="TheWinMain.cpp" />
+    <ClCompile Include="TomLibKeyGen.cpp" />
+    <ClCompile Include="windows_accountpage.cpp" />
+    <ClCompile Include="windows_cfgbuttons.cpp" />
+    <ClCompile Include="windows_injectorpage.cpp" />
+    <ClCompile Include="windows_maincontrolbuttons.cpp" />
+    <ClCompile Include="windows_playerspage.cpp" />
+    <ClCompile Include="windows_quickbuttons.cpp" />
+    <ClCompile Include="WinMainProc.cpp" />
+    <ClCompile Include="Winsock_Client.cpp" />
+    <ClCompile Include="Winsock_ClientController.cpp" />
+    <ClCompile Include="WSAController.cpp" />
+    <ClCompile Include="СWindowTextWriter.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
