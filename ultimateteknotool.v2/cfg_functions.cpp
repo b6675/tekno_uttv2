@@ -3,12 +3,12 @@
 
 
 static constexpr size_t BUFFERSIZE = 1024;
-static CONSTEXPRENCRYPTSTRW(uttv2_1, L"x022f_5f7a0ec6.demo", 0x9950);
-static CONSTEXPRENCRYPTSTRW(uttv2_2, L"x022f_5f7a0ec6.demo", 0xAC0A);
-static CONSTEXPRENCRYPTSTRW(uttv2_3, L"x022f_5f7a0ec6.demo", 0x13FA);
-#define CFGFILEMACRO_1 DECRYPTCONSTENCSTRW(uttv2_1, sizeof(L"x022f_5f7a0ec6.demo") / sizeof(wchar_t), 0x9950)
-#define CFGFILEMACRO_2 DECRYPTCONSTENCSTRW(uttv2_2, sizeof(L"x022f_5f7a0ec6.demo") / sizeof(wchar_t), 0xAC0A)
-#define CFGFILEMACRO_3 DECRYPTCONSTENCSTRW(uttv2_3, sizeof(L"x022f_5f7a0ec6.demo") / sizeof(wchar_t), 0x13FA)
+static CONSTEXPRENCRYPTSTRW(uttv2_1, L"teknostgs.ini", 0x1150);
+static CONSTEXPRENCRYPTSTRW(uttv2_2, L"teknostgs.ini", 0xBC0A);
+static CONSTEXPRENCRYPTSTRW(uttv2_3, L"teknostgs.ini", 0x14FA);
+#define CFGFILEMACRO_1 DECRYPTCONSTENCSTRW(uttv2_1, sizeof(L"teknostgs.ini") / sizeof(wchar_t), 0x1150)
+#define CFGFILEMACRO_2 DECRYPTCONSTENCSTRW(uttv2_2, sizeof(L"teknostgs.ini") / sizeof(wchar_t), 0xBC0A)
+#define CFGFILEMACRO_3 DECRYPTCONSTENCSTRW(uttv2_3, sizeof(L"teknostgs.ini") / sizeof(wchar_t), 0x14FA)
 
 void cfg_functions::LoadDefaultOrExistingCfg()
 {
