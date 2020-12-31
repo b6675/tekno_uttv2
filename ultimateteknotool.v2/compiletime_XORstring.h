@@ -1,6 +1,6 @@
 #pragma once
 #include <array>
-
+#include <stdint.h>
 namespace compile_time
 {
 	/*
@@ -123,7 +123,6 @@ inline void copy_string_w(wchar_t* dst, size_t sz1, const wchar_t* src, size_t s
 		dst[i] = src[i];
 	}
 	dst[sz1 - 1] = 0x00;
-	WCWOUT("decrypted-string: ", dst, " sz1: ", sz1, " sz2: ", sz2 );
 }
 
 
