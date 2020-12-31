@@ -4,7 +4,7 @@
 #include <memory>
 #include <mutex>
 #include <windows.h>
-#define UTT2_DEBUG
+#define NOUTT2_DEBUG
 
 #ifdef UTT2_DEBUG
 class WinConsoleW
