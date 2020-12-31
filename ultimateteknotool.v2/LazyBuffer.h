@@ -1,7 +1,6 @@
 #pragma once
 #include <vector>
 #include "debugconsole.h"
-#include "DRM/DRM_DllUnloadThread.h"
 
 template<typename T1, unsigned short SIZE>
 class LazyBuffer
