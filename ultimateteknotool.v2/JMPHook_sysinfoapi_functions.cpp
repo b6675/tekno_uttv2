@@ -87,60 +87,7 @@ MNGCTRLHOSTIF_INFO_TYPE = 0x2A,
 INACTIVE_INFO_TYPE = 0x7E,
 EOF_INFO_TYPE = 0x7F,
 			};
-			/*
-			   h000 b22fa79e 4f86f8a0 9e8ea282 539f98a0 normal hash
-			   h001 43677e04 ceccbe47 3f2be224 2d700c7b changing data -> new hash
-			   h002 7b738ab1 23373d8d 5f308163 6975e1d3 changing data -> new hash
-			   h003 b22fa79e 4f86f8a0 9e8ea282 539f98a0 normal hash
-			   ...
-			   h010 b22fa79e 4f86f8a0 9e8ea282 539f98a0 normal hash
-			   h011 e7059b40 85f66d3a 892101a4 f0e65b93 changing data -> new hash
-			   h012 b22fa79e 4f86f8a0 9e8ea282 539f98a0 normal hash
-			   ...
-			   h255 b22fa79e 4f86f8a0 9e8ea282 539f98a0 normal hash
-
-			   GSFT: blocksize->12
-			   data->1.2.?240.3.255.128.152.139.55.1.??
-			   GSFT: blocksize->124
-			   text->xxxxxxxxxxxxxxxxxx?xxxxGigabyte Technology Co., Ltd.?Z390 UD?Default string?Default string?Default string?Default string?
-			   GSFT: blocksize->101
-			   text->xxxxxxxxxxxxxx??Gigabyte Technology Co., Ltd.?Z390 UD?x.x?Default string?Default string?Default string?
-			   GSFT: blocksize->9
-			   data->9.17.28.?1.165.13.4.4.?
-			   GSFT: blocksize->19
-			   text->xxx?xDefault string?
-			   GSFT: blocksize->8
-			   data->34.11.37.?1.4.???
-			   GSFT: blocksize->12
-			   data->17.40.59.?58.?254.255.?????
-			   GSFT: blocksize->12
-			   data->17.40.61.?58.?254.255.?????
-			   GSFT: blocksize->17
-			   data->221.26.65.?3.1.?7.?49.52.?2.?????
-			   GSFT: blocksize->5
-			   data->11.?7.???
-			   GSFT: blocksize->4
-			   data->1.????
-			   GSFT: blocksize->12
-			   data->10.?255.255.255.255.255.11.?255.255.??
-			   GSFT: blocksize->1
-			   data->16.?
-
-			   blocksize (not intended) = 4,5,8,9,17,19
-
-			   GSFT: blocksize->12
-			   data->1.2.?240.3.255.128.152.139.55.1.??
-			   GSFT: blocksize->124
-			   text->xxxxxxxxxxxxxxxxxx?xxxxGigabyte Technology Co., Ltd.?Z390 UD?Default string?Default string?Default string?Default string?
-			   GSFT: blocksize->101
-			   text->xxxxxxxxxxxxxx??Gigabyte Technology Co., Ltd.?Z390 UD?x.x?Default string?Default string?Default string?
-			   GSFT: blocksize->12
-			   data->17.40.59.?58.?254.255.?????
-			   GSFT: blocksize->12
-			   data->17.40.59.?58.?254.255.?????
-			   GSFT: blocksize->12
-			   data->10.?255.255.255.255.255.11.?255.255.??
-			*/
+		
 			template<size_t BUFFSIZE>
 			class GenFakeData
 			{
