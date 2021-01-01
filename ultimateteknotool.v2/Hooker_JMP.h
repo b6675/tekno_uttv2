@@ -3,7 +3,6 @@
 #include "debugconsole.h"
 #include <memory>
 #include <mutex>
-#include "SystemFunctionXRefRemover.h"
 
 namespace Hooker_JMP
 {
